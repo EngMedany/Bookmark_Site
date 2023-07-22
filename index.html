@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="img/bookmark.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container my-5 ">
+
+        <h1 class="fontFamily text-center head">Bookmarker</h1>
+        <hr class="mt-5">
+
+       <div class="headText text-center">
+        <span class="fs-4"><i class="fa-solid fa-bookmark" ></i></span>
+        <span class="fs-4">Bookmark your favorite sites</span>
+        <span class="fs-4"><i class="fa-solid fa-bookmark" ></i></span>
+       </div>
+
+       <div class="form ">
+        <div class="siteName my-3">
+        
+            <label for="siteName" class="fw-bolder">
+             <i class="fa-solid fa-book-bookmark pe-2"></i>
+             Site Name
+            </label>
+
+            <div class="box position-relative">
+            <input class="form-control my-4 " type="text"  id="siteName" placeholder="Bookmark Name">
+
+           <div id="demo3" class="d-none right" >
+            <i  class="fa-solid fa-check position-absolute fa-xl check  " style="color: #085409;"></i>
+           </div>
+           <div id="demo4" class="d-none error">
+            <i  class="fa-solid fa-circle-exclamation position-absolute fa-xl check  " style="color: #e10e0e;"></i>
+
+           </div>
+            </div>
+        
+            </div>
+     
+     
+          <div class="siteUrl">
+             <label for="siteUrl" class="fw-bolder">
+                 <i class="fa-solid fa-link pe-2"></i>
+                 Site URL
+                </label>
+     
+             <div class="box2 position-relative">
+
+              <input class="form-control my-4" type="text"  id="siteUrl" placeholder="Website URL">
+           
+           
+              <div id="urlCheck1" class="d-none right" >
+                <i  class="fa-solid fa-check position-absolute fa-xl check  " style="color: #085409;"></i>
+               </div>
+               <div id="urlCheck2" class="d-none error">
+                <i  class="fa-solid fa-circle-exclamation position-absolute fa-xl check  " style="color: #e10e0e;"></i>
+    
+               </div>
+
+             </div>
+          </div>
+
+       </div>
+       <div class="d-grid col-2 mx-auto">
+        <button class="btn btn-danger text-capitalize submit" id="submit" type="submit">submit</button>
+      </div>
+
+      <hr class="mt-5">
+
+
+    </div>
+
+    <div class="container my-3">
+        <table class="table table-hover text-center table-group-divider table-striped">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="demo">
+            </tbody>
+        </table>
+    </div>
+
+
+    <div id="demo2" class="validation-box  d-flex justify-content-center align-items-center d-none">
+        <div id="box" class="box-conent bg-white p-4 rounded-4 shadow-lg">
+          <header class="box-header w-100 d-flex justify-content-between align-items-center mb-4 ">
+            <div class="circles d-flex ">
+               <span  class="rounded-circle me-2"></span> 
+              <span   class="rounded-circle me-2"></span>
+              <span   class="rounded-circle me-2"></span> 
+            </div>
+            <button class="btn border-0  close-btn " id="closeBtn">
+              <i class="fa-solid fa-xmark close fs-3"></i>
+            </button>
+          </header>
+          <p class="f-font m-0 pb-2">
+            Site Name or Url is not valid, Please follow the rules below :
+          </p>
+          <ol class="instruct list-unstyled m-0">
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>Site name must
+              contain at least 3 characters
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+              valid one
+            </li>
+          </ol>
+        </div>
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+   
+    <script src="js/main.js"></script>
+</body>
+</html>
