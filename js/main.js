@@ -65,7 +65,9 @@ function display_product(){
             <tr>
             <td>${index+1}</td>
             <td>${siteArray[index].name}</td>
-              <td> <a target="_blank" href="https://${siteArray[index].url}"><button class="btn-visit btn btn-warning"><i class="fa-solid fa-eye"></i>  Visit</button></a></td>
+           
+            
+            <td> <a target="_blank" href="https://${siteArray[index].url}"><button class="btn-visit btn btn-warning"><i class="fa-solid fa-eye"></i>  Visit</button></a></td>
                
             <td><button onclick="deleteSite(${index})" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i>  Delete</button></td>
         
@@ -105,7 +107,7 @@ var flag2=true
 siteUrl.addEventListener('keyup',function(){
 
     
-    if(validate(siteUrl.value,/^[a-z|A-Z]{1,}.(CO|COM|co|com)$/)){
+    if(validate(siteUrl.value,/^[a-z|A-Z]{1,}[.](CO|COM|co|com)$/)){
         
         flag2=true
          
